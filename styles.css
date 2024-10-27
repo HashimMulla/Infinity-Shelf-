@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f1e0;
+    background-image: url('https://t3.ftcdn.net/jpg/00/85/82/90/360_F_85829081_6EHsyxWMtQnSP0U9NkGq1oPRchyOO59K.jpg');
+}
+
+h1 {
+    color: #4a3f35;
+}
+
+.bookshelf {
+    display: flex;
+    justify-content: center; /* Centered books */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.book {
+    cursor: crosshair;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 100px; /* Set a width for the book container */
+    height: 250px; /* Fixed height for all books */
+    display: flex; /* Flexbox to center content */
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Start from the top */
+    margin-bottom: 20px; /* Add some spacing at the bottom */
+}
+
+.book img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.book p {
+    color: #4a3f35;
+    margin-top: 10px;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}

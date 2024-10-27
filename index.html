@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .special {
+            width: 100px; /* Set the width of the image */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Digital Library</h1>
+    <div class="bookshelf">
+        <div class="book" onclick="openPDF('https://ia804709.us.archive.org/12/items/TaqiUsmaniEnglish/TheGreatScholarsOfDeobandIslamicSeminary')">
+            <img src="https://m.media-amazon.com/images/I/31CcgySHSIL._AC_UF1000,1000_QL80_.jpg" alt="The Great Scholars of Deoband" class="special">
+        </div>
+        <div class="book" onclick="openPDF('https://ia601805.us.archive.org/5/items/TheInseparabilityOfShariaTariqaByShaykhMuhammadZakariyyaKandhelvi/TheInseparabilityOfShariaTariqaByShaykhMuhammadZakariyyaKandhelvir.a.pdf')">
+            <img src="https://www.meccabooks.com/cdn/shop/files/The-Inseparability-Of-Shari_a-_-Tariqa-Islamic-Law-_-Purification-of-the-Heart-Madania-Publications-40208871.jpg?v=1713596637" alt="The Inseparability of Sharia and Tariqa" class="special">
+        </div>
+        <!-- Add more books as needed -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
